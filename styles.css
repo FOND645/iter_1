@@ -6,6 +6,34 @@
     margin: auto;
 }
 
+@media (max-width: 700px) {
+    
+}
+
+#cool_hacker {
+    display: block;
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+    cursor: url(cursor.cur), auto;
+}
+
+a:hover {
+    background-color: black;
+}
+
+a:active {
+    background-color: red;
+}
+
+a:visited {
+    color: yellowgreen;
+    text-decoration: underline; 
+    /* Почему тег зедсь имеет меньший приоритет чем в описании элемента без действия? Причем не срабатывает именно text-decoration...*/
+}
+
 body {
     background-color: #727272;
     color: #292727;
@@ -55,7 +83,7 @@ h4 {
 }
 
 .image {
-    background-color: wheat;
+    
     max-width: 800px;
     border-style: outset;
     border-radius: 5%;
@@ -64,7 +92,111 @@ h4 {
     border-right: dotted 10px red;
 }
 
-.image_place > img {
-    border-bottom-color: blue;
-    border-bottom-style: solid;
+.image_place > div {
+    background-color: aqua;
+    /* А вот тут проблема. Правила не применяются, почему пока не понимаю. */
+    
+}
+
+#try_to_border {
+    min-height: 150px;
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#try_to_border > div {
+
+    background-color: aqua;
+    float: left;
+    margin: auto;
+    max-width: 1200;
+    max-width: 25%;
+    border-style: solid;
+    border-color: black;
+    word-break: break-all;
+    box-sizing: border-box;
+}
+
+#tbl td:nth-child(1),
+#tbl td:nth-child(2) {
+    color:indigo;
+}
+
+.ulist {
+    list-style: inside;
+}
+
+.up_head h1 {
+    text-align: center;
+}
+
+.reverse_messege {
+    display: flex;
+}
+
+.reverse_messege label{
+    display:block;
+    color: rgba(0, 0, 0, 0.432);
+    min-width: 125px;
+    max-width: 40%;
+}
+
+.reverse_messege ::placeholder {
+    color: #b0b0bb;
+    opacity: 1;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+.reverse_messege input,
+.reverse_messege textarea {
+    width: 35%;
+    box-sizing: border-box; 
+    background-color: transparent;
+     ;
+    border: none;
+    color: green;
+    border-bottom: solid #a0a0a0 2px;
+    padding: 15px 0 10px;
+    outline: none;
+}
+
+.btn {
+    background-color: pink;
+    color:#292727;
+    cursor: url(cursor.cur), auto;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+.square {
+    position: fixed;
+    background-color: blue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+}
+
+.square p {
+    position:fixed;
+    bottom: 50%;
+    left: 50%
+    
+}
+
+#home_ico {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.square p:hover {
+    background-color: none;
 }
