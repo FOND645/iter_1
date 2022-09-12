@@ -6,9 +6,7 @@
     margin: auto;
 }
 
-@media (max-width: 700px) {
-    
-}
+
 
 #cool_hacker {
     display: block;
@@ -118,6 +116,12 @@ h4 {
     box-sizing: border-box;
 }
 
+@media (max-width: 1200px) {
+     #try_to_border > div {
+        float: none;
+     }
+}
+
 #tbl td:nth-child(1),
 #tbl td:nth-child(2) {
     color:indigo;
@@ -200,3 +204,5 @@ h4 {
 .square p:hover {
     background-color: none;
 }
+
+
